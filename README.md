@@ -2,48 +2,48 @@
     <img src="assets/images/logo.png" width="300">
 </div>
 
-# Sobre o projeto
-O objetivo do projeto é desenvolver um jogo interativo para um grupo de amigos. Nele, uma pessoa não conhece uma palavra secreta, enquanto as outras estão cientes dela. Durante o jogo, ocorrerá uma série de rodadas de perguntas relacionadas a essa palavra secreta. Ao final do jogo, todos os participantes devem votar em quem eles acham que não conhece a palavra. O desafio para quem conhece a palavra é identificar quem está por fora, enquanto a pessoa que não sabe deve tentar descobrir a palavra ou, ao menos, convencer os outros de que sabe.
+# About the Project
+The goal of this project is to develop an interactive game for a group of friends. In this game, one person doesn't know a secret word, while the others are aware of it. During the game, there will be a series of rounds of questions related to this secret word. At the end of the game, all participants must vote on who they think doesn't know the word. The challenge for those who know the word is to identify who is unaware, while the person who doesn't know must try to discover the word or, at least, convince the others that they know it.
 
-## Pré-requisitos
+## Prerequisites
 
-O sistema foi desenvolvido utilizando a versão `20.11.1` do `Node.js` e a versão `8.15.5` do gerenciador de pacotes `pnpm`.
+The system was developed using `Node.js` version `20.11.1` and the package manager `pnpm` version `8.15.5`.
 
-## Como rodar a aplicação
+## How to Run the Application
 
-No terminal, clone o projeto:
-
-```
-git clone https://github.com/ViniciusBenfica/vortez.git
-```
-
-Instale as dependências:
+In the terminal, clone the project:
 
 ```
-pnpm intall
+git clone https://github.com/ViniciusBenfica/vortz.git
 ```
 
-Para executar no emulador android use o comando:
+Install the dependencies:
+
+```
+pnpm install
+```
+
+To run on the Android emulator, use the command:
 
 ```
 pnpm android
 ```
 
-Caso queira rodar no navegador use o comando:
+If you want to run it in the browser, use the command:
 
 ```
 pnpm web
 ```
 
-## Testes
+## Tests
 
-Os testes unitários foram implementados utilizando o Jest. Para executar os testes, utilize o comando:
+Unit tests were implemented using Jest. To run the tests, use the command:
 
 ```
 pnpm jest
 ```
 
-## Imagens do projeto
+## Project Images
 
 <div align="center">
     <img src="assets/projectImages/start.png" width="200">
