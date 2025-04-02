@@ -1,21 +1,29 @@
 name: Continuous Integration
 
 on: 
-  pull_request:
+  push:
     branches:
       - develop
 
 jobs:
   continuous-integration:
+    name: Build and Test
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Using Node.js
-      uses: actions/setup-node@v2
+    - uses: actions/checkout@v4
+    - name: Setup node
+      uses: actions/setup-node@v4
       with:
-        node-version: 21.
-    - name: run install and build
-      run: |
-        npm install
-        npm run build
+        node-version: 20.
+
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v3
+      with: 
+        version: 8.
+
+    - name: Install Dependencies
+      run: pnpm install
+
+    - name: Run Tests
+      run: pnpm jest
